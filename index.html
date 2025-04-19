@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        header {
+            background: #35424a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        nav {
+            background: #e8491d;
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        
+        footer {
+            background: #35424a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        
+        /* Gallery styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: 3px solid #e8491d;
+        }
+        
+        /* Blog styles */
+        .blog-post {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        
+        /* Contact form styles */
+        .contact-form {
+            max-width: 500px;
+            margin: auto;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+        }
+        
+        .contact-form button {
+            background: #e8491d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        
+        .contact-form button:hover {
+            background: #35424a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home">
+            <h2>About Me</h2>
+            <img src="Me.jpg" alt="Profile Picture" style="float: left; margin-right: 20px; width: 230px; height: 310px;">
+            <p>Hello! My name is Joachim Kalangi. Welcome to my personal website where I share information about myself, my hobbies, and my thoughts on various topics.</p>
+            <p>I'm passionate about art especially in music. I really enjoy listening to music of various genres, whether it's pop, rock, country, and more. Currently, I am a bass singer in a choir that I joined, the Sam Ratulangi University Choir, and we have participated in various competitions.</p>
+            <p>I've been part of the choir communities since high school, and since then, I've frequently participated in competitions, as well as performed in concerts. To this day, I remain active in choirs, both at my church and at university (Sam Ratulangi University Choir) and a vocal ensemble I'm currently part of, the Vox Angelica Mix Choir.</p>
+            <p>This website serves as a platform for me to express my interests and connect with like-minded individuals. Feel free to explore to learn more about me!</p>
+            <div style="clear: both;"></div>
+        </section>
+        
+        <!-- Gallery Section -->
+        <section id="gallery" style="display: none;">
+            <h2>My Photo Gallery</h2>
+            <div class="gallery">
+                <img src="IMG-20250413-WA0022.jpg" alt="Photo 1">
+                <img src="IMG-20250419-WA0017.jpg" alt="Photo 2">
+                <img src="IMG-20250419-WA0006.jpg" alt="Photo 3">
+                <img src="IMG-20250419-WA0013.jpg" alt="Photo 4">
+                <img src="IMG-20250419-WA0021.jpg" alt="Photo 5">
+                <img src="IMG-20250413-WA0023.jpg" alt="Photo 6">
+            </div>
+        </section>
+        
+        <!-- Blog Section -->
+        <section id="blog" style="display: none;">
+            <h2>My Blog</h2>
+            
+            <article class="blog-post">
+                <h3>The Future of Artificial Intelligence</h3>
+                <p><small>Posted on May 15, 2023</small></p>
+                <p>Artificial Intelligence is rapidly transforming our world. From voice assistants to self-driving cars, AI is becoming increasingly integrated into our daily lives. In this article, I explore the potential future developments in AI and how they might impact society.</p>
+                <p>One of the most exciting areas is healthcare, where AI can help diagnose diseases earlier and more accurately than human doctors. However, we must also consider the ethical implications of these technologies.</p>
+            </article>
+            
+            <article class="blog-post">
+                <h3>Exploring Watercolor Techniques</h3>
+                <p><small>Posted on April 2, 2023</small></p>
+                <p>Watercolor painting is a beautiful and challenging medium that I've recently begun exploring. In this post, I share some techniques I've learned for creating stunning watercolor effects.</p>
+                <p>The wet-on-wet technique creates beautiful, soft blends, while dry brush work adds texture and detail. Mastering the balance between water and pigment is key to successful watercolor painting.</p>
+            </article>
+            
+            <article class="blog-post">
+                <h3>Why I Love Trail Running</h3>
+                <p><small>Posted on March 10, 2023</small></p>
+                <p>Trail running combines my love of nature with my passion for fitness. Unlike road running, trail running offers varied terrain and beautiful scenery that makes each run an adventure.</p>
+                <p>Beyond the physical benefits, trail running has greatly improved my mental health. There's something incredibly therapeutic about running through forests and mountains that can't be replicated in a gym.</p>
+            </article>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" style="display: none;">
+            <h2>Contact Me</h2>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <p>Or reach me directly at: <a href="mailto:contact@example.com">contact@example.com</a></p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 My Personal Website. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Simple navigation functionality
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Hide all sections
+                document.querySelectorAll('section').forEach(section => {
+                    section.style.display = 'none';
+                });
+                
+                // Show the selected section
+                const sectionId = this.getAttribute('href').substring(1);
+                document.getElementById(sectionId).style.display = 'block';
+            });
+        });
+        
+        // Show home section by default
+        document.getElementById('home').style.display = 'block';
+    </script>
+</body>
+</html>
